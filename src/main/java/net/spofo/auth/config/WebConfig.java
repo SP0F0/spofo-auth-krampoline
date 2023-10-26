@@ -1,18 +1,9 @@
 package net.spofo.auth.config;
 
-import io.netty.channel.ChannelOption;
-import io.netty.handler.timeout.ReadTimeoutHandler;
-import io.netty.handler.timeout.WriteTimeoutHandler;
-import io.netty.resolver.DefaultAddressResolverGroup;
-import java.time.Duration;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.client.reactive.ReactorClientHttpConnector;
-import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import reactor.netty.http.client.HttpClient;
-import reactor.netty.transport.ProxyProvider;
+
 
 
 @Configuration
