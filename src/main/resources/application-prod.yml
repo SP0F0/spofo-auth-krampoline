@@ -24,7 +24,7 @@ logging:
   level:
     '[com.example.kakao]': INFO
     '[org.hibernate.type]': TRACE
-	
+
 auth:
   kakao.issuer: https://kauth.kakao.com
   kakao.clientid: bdf3c21f51b87d12b32d608f53f90eb2
