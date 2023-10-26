@@ -6,7 +6,7 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:h2:mem:test;MODE=MySQL
+	url: ${DATABASE_URL}?allowPublicKeyRetrieval=true&useSSL=false
     driver-class-name: org.mariadb.jdbc.Driver
     username: root
     password: root
