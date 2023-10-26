@@ -6,10 +6,10 @@ server:
   port: 8080
 spring:
   datasource:
-    url: ${DATABASE_URL}?allowPublicKeyRetrieval=true&useSSL=false
     driver-class-name: org.mariadb.jdbc.Driver
-    username: root
-    password: root
+    url: jdbc:mariadb://spofo.c2stqgy0nn9a.ap-northeast-2.rds.amazonaws.com:3306/SPOFO_DB
+    username: spofo_admin
+    password: spofo1234
   jpa:
     hibernate:
       ddl-auto: create
@@ -24,3 +24,8 @@ logging:
   level:
     '[com.example.kakao]': INFO
     '[org.hibernate.type]': TRACE
+	
+auth:
+  kakao.issuer: https://kauth.kakao.com
+  kakao.clientid: bdf3c21f51b87d12b32d608f53f90eb2
+  KAKAO.public.key.url: https://kauth.kakao.com/.well-known/jwks.json
