@@ -6,10 +6,10 @@ server:
   port: 8080
 spring:
   datasource:
+    url: ${DATABASE_URL}?allowPublicKeyRetrieval=true&useSSL=false
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://spofo.c2stqgy0nn9a.ap-northeast-2.rds.amazonaws.com:3306/SPOFO_DB
-    username: spofo_admin
-    password: spofo1234
+    username: root
+    password: root
   jpa:
     hibernate:
       ddl-auto: create
