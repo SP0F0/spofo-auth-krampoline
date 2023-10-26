@@ -30,13 +30,6 @@ import net.spofo.auth.dto.response.MemberResponse;
 import net.spofo.auth.entity.PublicKey;
 import net.spofo.auth.repository.PublicKeyRepository;
 import net.spofo.auth.exception.InvalidToken;
-import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.reactive.function.client.support.WebClientAdapter;
-import org.springframework.web.service.invoker.HttpServiceProxyFactory;
-import org.springframework.web.util.DefaultUriBuilderFactory;
-import org.springframework.web.util.DefaultUriBuilderFactory.EncodingMode;
-import reactor.netty.http.client.HttpClient;
-import reactor.netty.transport.ProxyProvider;
 
 @Service
 @RequiredArgsConstructor
